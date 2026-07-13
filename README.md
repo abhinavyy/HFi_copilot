@@ -44,22 +44,3 @@ Mutative operations require explicit vendor authorization:
 *   **Database Layers:** PostgreSQL (Core CRM & Vector Store), Redis (Active State & Pending Approvals).
 
 ---
-
-## 💻 How to Run the Demo Locally
-
-### 1. Run the Interactive Sandbox UI
-The interactive demo is fully static and runs locally without any server-side dependencies or CORS blocks:
-*   Simply locate **`index.html`** in your file explorer and **double-click to open it** in any web browser.
-*   *Interactive Steps:* Type *"Extend Sarah Jenkins' trial by 7 days"* in the AI Copilot chat. Review the Live Diagnostics, click **Approve** on the card, and watch the CRM Database explorer update and flash in real time.
-
-### 2. Compile the PDF Report
-To regenerate `report.pdf` from the source markdown `report.md`:
-1.  Ensure you have python installed along with the `markdown` library:
-    ```bash
-    pip install markdown
-    ```
-2.  Execute the conversion script:
-    ```bash
-    python convert_pdf.py
-    ```
-    *(Note: This uses Microsoft Edge's built-in Chromium print engine to compile the HTML structure into the PDF report).*
